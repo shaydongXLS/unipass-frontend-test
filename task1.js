@@ -1,5 +1,9 @@
 const maze = parseMaze();
 
+// Serializing the maze JS object to JSON
+const mazeJSON = JSON.stringify(maze);
+console.log(mazeJSON);
+
 window.addEventListener('keydown', ({ key }) => {
     let dx = 0;
     let dy = 0;

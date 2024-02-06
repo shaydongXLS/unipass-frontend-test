@@ -11,6 +11,8 @@ window.parseMaze = () => {
       for (let j = 0; j < cells.length; j++) {
         let cell = cells[j];
         row.push({
+          row: i,
+          col: j,  
           cell,
           top: cell.classList.contains('top'),
           right: cell.classList.contains('right'),
